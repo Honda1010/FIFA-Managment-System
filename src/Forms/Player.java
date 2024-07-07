@@ -369,8 +369,8 @@ public class Player extends javax.swing.JPanel {
 
     private void jButton_add1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_add1ActionPerformed
         // TODO add your handling code here:
-//        String player_id_text = jTextField_player_id.getText();
-//        int player_id = Integer.parseInt(player_id_text);
+        String player_id_text = jTextField_player_id.getText();
+        int player_id = Integer.parseInt(player_id_text);
         String fname = jTextField_fname.getText();
         String lname = jTextField_lname.getText();
         String age_text = jTextField_age.getText();
@@ -386,8 +386,8 @@ public class Player extends javax.swing.JPanel {
         int shirt_num = Integer.parseInt(shirt_num_text);
         String salary_text = jTextField_salary.getText();
         int salary = Integer.parseInt(salary_text);
-        String sqlquery = "INSERT INTO player (fname, lname, age, player_national, height, position, preferred_foot, club_id, shirt_num,salary) VALUES"
-                + "('" + fname + "', '" + lname + "', " + age + ", '" + player_national + "', " + height + ", '" + position + "', '" + preferred_foot + "', " + club_id + "," + shirt_num + ", " + salary + ")";
+        String sqlquery = "INSERT INTO player (player_id,fname, lname, age, player_national, height, position, preferred_foot, club_id, shirt_num,salary) VALUES"
+                + "('" + player_id +"', '"+fname + "', '" + lname + "', " + age + ", '" + player_national + "', " + height + ", '" + position + "', '" + preferred_foot + "', " + club_id + "," + shirt_num + ", " + salary + ")";
 
         try {
             pst = conn.prepareStatement(sqlquery);

@@ -20,7 +20,7 @@ import sqlConnection.SQLcon;
 
 /**
  *
- * @author MOHAMED
+ * @author MOHANED
  */
 public class staff extends javax.swing.JPanel {
 
@@ -269,8 +269,8 @@ public class staff extends javax.swing.JPanel {
     private void buttonGradient1_addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonGradient1_addActionPerformed
         
         
-//        String staff_id_text = jTextField_staff_id.getText();
-//        int staff_id = Integer.parseInt(staff_id_text);
+        String staff_id_text = jTextField_staff_id.getText();
+        int staff_id = Integer.parseInt(staff_id_text);
         
         String name = jTextField_name.getText();
 
@@ -284,8 +284,8 @@ public class staff extends javax.swing.JPanel {
         int coach_id = Integer.parseInt(coach_id_text);
         
 
-        String sqlquery = "INSERT INTO staff (name, age, position, coach_id) VALUES"
-                + "('" + name + "', " + age + ", '" + position + "', "+ coach_id + ")";
+        String sqlquery = "INSERT INTO staff (staff_id , staff_name, age, position, coach_id) VALUES"
+                + "("+staff_id+ ",' " + name + "', " + age + ", '" + position + "', "+ coach_id + ")";
 
         try {
             pst = conn.prepareStatement(sqlquery);
@@ -335,7 +335,7 @@ public class staff extends javax.swing.JPanel {
         String coach_id_text = jTextField_coach_id.getText();
         int coach_id = Integer.parseInt(coach_id_text);
         
-        String sqlquery = "Update staff SET staff_id=?,name=?,age=?,position=?, coach_id where staff_id='" + staff_id_text + "'";         // TODO add your handling code here:
+        String sqlquery = "Update staff SET staff_id=?,staff_name=?,age=?,position=?, coach_id=? where staff_id='" + staff_id_text + "'";         // TODO add your handling code here:
         try {
             pst = conn.prepareStatement(sqlquery);
             pst.setInt(1, staff_id);
@@ -400,7 +400,7 @@ public class staff extends javax.swing.JPanel {
             rs = st.executeQuery(sqlquery);
             staff_entity staff_entity;
             while (rs.next()) {
-                staff_entity = new staff_entity(rs.getInt("staff_id"),rs.getString("name"),rs.getInt("age"),rs.getString("position"),rs.getInt("coach_id"));
+                staff_entity = new staff_entity(rs.getInt("staff_id"),rs.getString("staff_name"),rs.getInt("age"),rs.getString("position"),rs.getInt("coach_id"));
                 stafflist.add(staff_entity);
             }
         } catch (Exception e) {
