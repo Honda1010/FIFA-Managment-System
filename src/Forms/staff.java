@@ -47,169 +47,23 @@ public class staff extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel_staff_id = new javax.swing.JLabel();
-        jLabel_age = new javax.swing.JLabel();
-        jLabel_coach_id = new javax.swing.JLabel();
-        jLabel_name = new javax.swing.JLabel();
-        jLabel_position = new javax.swing.JLabel();
-        jTextField_age = new javax.swing.JTextField();
-        jTextField_coach_id = new javax.swing.JTextField();
-        jTextField_staff_id = new javax.swing.JTextField();
-        jTextField_name = new javax.swing.JTextField();
-        buttonGradient1_add = new swing.ButtonGradient();
-        buttonGradient1_delete = new swing.ButtonGradient();
-        buttonGradient1_update1 = new swing.ButtonGradient();
-        jTextField_position = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        gradientPanel1 = new componant.GradientPanel();
+        jTextField_staff_id = new javax.swing.JTextField();
+        jTextField_age = new javax.swing.JTextField();
+        jTextField_name = new javax.swing.JTextField();
+        jTextField_position = new javax.swing.JTextField();
+        jTextField_coach_id = new javax.swing.JTextField();
+        Staff_information_label = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel_staff_id.setBackground(new java.awt.Color(5, 117, 230));
-        jLabel_staff_id.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel_staff_id.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel_staff_id.setText("Staff ID");
-        jLabel_staff_id.setOpaque(true);
-
-        jLabel_age.setBackground(new java.awt.Color(5, 117, 230));
-        jLabel_age.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel_age.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel_age.setText("Age");
-        jLabel_age.setOpaque(true);
-
-        jLabel_coach_id.setBackground(new java.awt.Color(5, 117, 230));
-        jLabel_coach_id.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel_coach_id.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel_coach_id.setText("Coach ID");
-        jLabel_coach_id.setOpaque(true);
-
-        jLabel_name.setBackground(new java.awt.Color(5, 117, 230));
-        jLabel_name.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel_name.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel_name.setText("Name");
-        jLabel_name.setOpaque(true);
-
-        jLabel_position.setBackground(new java.awt.Color(5, 117, 230));
-        jLabel_position.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel_position.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel_position.setText("Position");
-        jLabel_position.setOpaque(true);
-
-        jTextField_coach_id.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField_coach_idActionPerformed(evt);
-            }
-        });
-
-        jTextField_name.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField_nameActionPerformed(evt);
-            }
-        });
-
-        buttonGradient1_add.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8-add-48.png"))); // NOI18N
-        buttonGradient1_add.setColor1(new java.awt.Color(255, 255, 255));
-        buttonGradient1_add.setColor2(new java.awt.Color(255, 255, 255));
-        buttonGradient1_add.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonGradient1_addActionPerformed(evt);
-            }
-        });
-
-        buttonGradient1_delete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8-delete-48.png"))); // NOI18N
-        buttonGradient1_delete.setText("buttonGradient1");
-        buttonGradient1_delete.setColor1(new java.awt.Color(255, 255, 255));
-        buttonGradient1_delete.setColor2(new java.awt.Color(255, 255, 255));
-        buttonGradient1_delete.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonGradient1_deleteActionPerformed(evt);
-            }
-        });
-
-        buttonGradient1_update1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8-available-updates-50.png"))); // NOI18N
-        buttonGradient1_update1.setText("buttonGradient1");
-        buttonGradient1_update1.setColor1(new java.awt.Color(255, 255, 255));
-        buttonGradient1_update1.setColor2(new java.awt.Color(255, 255, 255));
-        buttonGradient1_update1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonGradient1_update1ActionPerformed(evt);
-            }
-        });
-
-        jTextField_position.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField_positionActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel_staff_id)
-                    .addComponent(jLabel_age)
-                    .addComponent(jLabel_coach_id))
-                .addGap(30, 30, 30)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(buttonGradient1_add, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 103, Short.MAX_VALUE)
-                        .addComponent(buttonGradient1_update1, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jTextField_staff_id, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 181, Short.MAX_VALUE)
-                            .addComponent(jTextField_age, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField_coach_id, javax.swing.GroupLayout.Alignment.LEADING))
-                        .addGap(43, 43, 43)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel_position)
-                            .addComponent(jLabel_name))))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField_position, javax.swing.GroupLayout.DEFAULT_SIZE, 180, Short.MAX_VALUE)
-                            .addComponent(jTextField_name)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(66, 66, 66)
-                        .addComponent(buttonGradient1_delete, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(35, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
-                        .addComponent(jLabel_age))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel_staff_id)
-                            .addComponent(jTextField_staff_id, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel_name)
-                            .addComponent(jTextField_name, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField_age, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel_position)
-                            .addComponent(jTextField_position, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel_coach_id)
-                    .addComponent(jTextField_coach_id, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(buttonGradient1_update1, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(buttonGradient1_delete, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(buttonGradient1_add, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(41, 41, 41))
-        );
+        jLabel5 = new javax.swing.JLabel();
+        addlabel1 = new javax.swing.JLabel();
+        update = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -229,31 +83,159 @@ public class staff extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(jTable1);
 
-        jLabel4.setBackground(new java.awt.Color(5, 117, 230));
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jTextField_name.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField_nameActionPerformed(evt);
+            }
+        });
+
+        jTextField_position.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField_positionActionPerformed(evt);
+            }
+        });
+
+        jTextField_coach_id.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField_coach_idActionPerformed(evt);
+            }
+        });
+
+        Staff_information_label.setBackground(new java.awt.Color(255, 255, 255));
+        Staff_information_label.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        Staff_information_label.setForeground(new java.awt.Color(255, 255, 255));
+        Staff_information_label.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/4.png"))); // NOI18N
+        Staff_information_label.setText("Staff Information");
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Staff ID");
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Age");
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("Coach ID");
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Staff");
-        jLabel4.setOpaque(true);
+        jLabel4.setText("Position");
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Name");
+
+        addlabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8-add-48.png"))); // NOI18N
+        addlabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                addlabel1MouseClicked(evt);
+            }
+        });
+
+        update.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8-available-updates-50.png"))); // NOI18N
+        update.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                updateMouseClicked(evt);
+            }
+        });
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8-delete-48.png"))); // NOI18N
+        jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel6MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout gradientPanel1Layout = new javax.swing.GroupLayout(gradientPanel1);
+        gradientPanel1.setLayout(gradientPanel1Layout);
+        gradientPanel1Layout.setHorizontalGroup(
+            gradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, gradientPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(gradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(gradientPanel1Layout.createSequentialGroup()
+                        .addGroup(gradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(gradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel1)
+                                .addComponent(jLabel2))
+                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(gradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextField_age, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField_staff_id, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField_coach_id, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(Staff_information_label, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 134, Short.MAX_VALUE)
+                .addGroup(gradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, gradientPanel1Layout.createSequentialGroup()
+                        .addComponent(addlabel1)
+                        .addGap(18, 18, 18))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, gradientPanel1Layout.createSequentialGroup()
+                        .addGroup(gradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel6)
+                            .addGroup(gradientPanel1Layout.createSequentialGroup()
+                                .addGroup(gradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(gradientPanel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel5)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jTextField_name, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(gradientPanel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel4)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jTextField_position, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(55, 55, 55)
+                                .addComponent(update)))
+                        .addGap(15, 15, 15))))
+        );
+        gradientPanel1Layout.setVerticalGroup(
+            gradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(gradientPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(gradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, gradientPanel1Layout.createSequentialGroup()
+                        .addComponent(addlabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(update)
+                        .addGap(6, 6, 6))
+                    .addGroup(gradientPanel1Layout.createSequentialGroup()
+                        .addComponent(Staff_information_label)
+                        .addGap(30, 30, 30)
+                        .addGroup(gradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField_name, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField_staff_id, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel5))
+                        .addGap(18, 18, 18)
+                        .addGroup(gradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField_position, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel4)
+                            .addComponent(jTextField_age, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel2))))
+                .addGroup(gradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(gradientPanel1Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(gradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField_coach_id, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel3))))
+                .addContainerGap(64, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jScrollPane1)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(72, 72, 72)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(71, Short.MAX_VALUE))
-            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(gradientPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 155, Short.MAX_VALUE)
+                .addComponent(gradientPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 198, Short.MAX_VALUE)
                 .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -265,96 +247,6 @@ public class staff extends javax.swing.JPanel {
     private void jTextField_nameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_nameActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField_nameActionPerformed
-
-    private void buttonGradient1_addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonGradient1_addActionPerformed
-        
-        
-        String staff_id_text = jTextField_staff_id.getText();
-        int staff_id = Integer.parseInt(staff_id_text);
-        
-        String name = jTextField_name.getText();
-
-
-        String age_text = jTextField_age.getText();
-        int age = Integer.parseInt(age_text);
-
-        String position = jTextField_position.getText();
-        
-        String coach_id_text = jTextField_coach_id.getText();
-        int coach_id = Integer.parseInt(coach_id_text);
-        
-
-        String sqlquery = "INSERT INTO staff (staff_id , staff_name, age, position, coach_id) VALUES"
-                + "("+staff_id+ ",' " + name + "', " + age + ", '" + position + "', "+ coach_id + ")";
-
-        try {
-            pst = conn.prepareStatement(sqlquery);
-            pst.execute();
-            JOptionPane.showMessageDialog(null, "Record Added Successfully");
-            //            populate_table();
-            show_staff_entity();
-//            jTextField_staff_id.setText("");
-            jTextField_coach_id.setText("");
-            jTextField_position.setText("");
-            jTextField_age.setText("");
-            jTextField_name.setText("");
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e);
-        }
-        //        // TODO add your handling code here:
-    }//GEN-LAST:event_buttonGradient1_addActionPerformed
-
-    private void buttonGradient1_deleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonGradient1_deleteActionPerformed
-        try {
-
-            int row = jTable1.getSelectedRow();
-            String value = (jTable1.getModel().getValueAt(row, 0).toString());
-            String query = "DELETE FROM staff where staff_id =" + value;
-            PreparedStatement pst = conn.prepareStatement(query);
-            pst.executeUpdate();
-            DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-            model.setRowCount(0);
-            show_staff_entity();
-            JOptionPane.showMessageDialog(null, "Deleted Successfully!");
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e);
-        }                  // TODO add your handling code here:
-    }//GEN-LAST:event_buttonGradient1_deleteActionPerformed
-
-    private void buttonGradient1_update1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonGradient1_update1ActionPerformed
-        String staff_id_text = jTextField_staff_id.getText();
-        int staff_id = Integer.parseInt(staff_id_text);
-
-        String name = jTextField_name.getText();
-
-        String age_text = jTextField_age.getText();
-        int age = Integer.parseInt(age_text);
-
-        String position = jTextField_position.getText();
-        
-        String coach_id_text = jTextField_coach_id.getText();
-        int coach_id = Integer.parseInt(coach_id_text);
-        
-        String sqlquery = "Update staff SET staff_id=?,staff_name=?,age=?,position=?, coach_id=? where staff_id='" + staff_id_text + "'";         // TODO add your handling code here:
-        try {
-            pst = conn.prepareStatement(sqlquery);
-            pst.setInt(1, staff_id);
-            pst.setString(2, name);
-            pst.setInt(3, age);
-            pst.setString(4, position);
-            pst.setInt(5, coach_id);
-            pst.executeUpdate();
-            show_staff_entity();
-            JOptionPane.showMessageDialog(null, "Record Update Successful");
-            jTextField_coach_id.setText("");
-            jTextField_name.setText("");
-            jTextField_age.setText("");
-            jTextField_position.setText("");
-            jTextField_staff_id.setText("");
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e);
-        }
-    }//GEN-LAST:event_buttonGradient1_update1ActionPerformed
 
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
         int r = jTable1.getSelectedRow();
@@ -392,6 +284,94 @@ public class staff extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField_positionActionPerformed
 
+    private void addlabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addlabel1MouseClicked
+                 
+        
+        String staff_id_text = jTextField_staff_id.getText();
+        int staff_id = Integer.parseInt(staff_id_text);
+        
+        String name = jTextField_name.getText();
+
+
+        String age_text = jTextField_age.getText();
+        int age = Integer.parseInt(age_text);
+
+        String position = jTextField_position.getText();
+        
+        String coach_id_text = jTextField_coach_id.getText();
+        int coach_id = Integer.parseInt(coach_id_text);
+        
+
+        String sqlquery = "INSERT INTO staff (staff_id , staff_name, age, position, coach_id) VALUES"
+                + "("+staff_id+ ",' " + name + "', " + age + ", '" + position + "', "+ coach_id + ")";
+
+        try {
+            pst = conn.prepareStatement(sqlquery);
+            pst.execute();
+            JOptionPane.showMessageDialog(null, "Record Added Successfully");
+            //            populate_table();
+            show_staff_entity();
+//            jTextField_staff_id.setText("");
+            jTextField_coach_id.setText("");
+            jTextField_position.setText("");
+            jTextField_age.setText("");
+            jTextField_name.setText("");
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+    }//GEN-LAST:event_addlabel1MouseClicked
+
+    private void updateMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_updateMouseClicked
+        String staff_id_text = jTextField_staff_id.getText();
+        int staff_id = Integer.parseInt(staff_id_text);
+
+        String name = jTextField_name.getText();
+
+        String age_text = jTextField_age.getText();
+        int age = Integer.parseInt(age_text);
+
+        String position = jTextField_position.getText();
+
+        String coach_id_text = jTextField_coach_id.getText();
+        int coach_id = Integer.parseInt(coach_id_text);
+
+        String sqlquery = "Update staff SET staff_id=?,staff_name=?,age=?,position=?, coach_id=? where staff_id='" + staff_id_text + "'";         // TODO add your handling code here:
+        try {
+            pst = conn.prepareStatement(sqlquery);
+            pst.setInt(1, staff_id);
+            pst.setString(2, name);
+            pst.setInt(3, age);
+            pst.setString(4, position);
+            pst.setInt(5, coach_id);
+            pst.executeUpdate();
+            show_staff_entity();
+            JOptionPane.showMessageDialog(null, "Record Update Successful");
+            jTextField_coach_id.setText("");
+            jTextField_name.setText("");
+            jTextField_age.setText("");
+            jTextField_position.setText("");
+            jTextField_staff_id.setText("");
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+    }//GEN-LAST:event_updateMouseClicked
+
+    private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
+       try {
+            int row = jTable1.getSelectedRow();
+            String value = (jTable1.getModel().getValueAt(row, 0).toString());
+            String query = "DELETE FROM staff where staff_id =" + value;
+            PreparedStatement pst = conn.prepareStatement(query);
+            pst.executeUpdate();
+            DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+            model.setRowCount(0);
+            show_staff_entity();
+            JOptionPane.showMessageDialog(null, "Deleted Successfully!");
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel6MouseClicked
+
        public ArrayList<staff_entity> stafflist() {
         ArrayList<staff_entity> stafflist = new ArrayList<>();
         String sqlquery = " select * from staff where coach_id=1";
@@ -425,16 +405,15 @@ public class staff extends javax.swing.JPanel {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private swing.ButtonGradient buttonGradient1_add;
-    private swing.ButtonGradient buttonGradient1_delete;
-    private swing.ButtonGradient buttonGradient1_update1;
+    private javax.swing.JLabel Staff_information_label;
+    private javax.swing.JLabel addlabel1;
+    private componant.GradientPanel gradientPanel1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel_age;
-    private javax.swing.JLabel jLabel_coach_id;
-    private javax.swing.JLabel jLabel_name;
-    private javax.swing.JLabel jLabel_position;
-    private javax.swing.JLabel jLabel_staff_id;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField_age;
@@ -442,5 +421,6 @@ public class staff extends javax.swing.JPanel {
     private javax.swing.JTextField jTextField_name;
     private javax.swing.JTextField jTextField_position;
     private javax.swing.JTextField jTextField_staff_id;
+    private javax.swing.JLabel update;
     // End of variables declaration//GEN-END:variables
 }

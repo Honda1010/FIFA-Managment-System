@@ -48,18 +48,18 @@ public class Coach extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         gradientPanel1 = new componant.GradientPanel();
-        jLabel_coach_id = new javax.swing.JLabel();
         jTextField_coach_id = new javax.swing.JTextField();
-        jLabel_coach_name = new javax.swing.JLabel();
         jTextField_coach_name = new javax.swing.JTextField();
-        jLabel_club_id = new javax.swing.JLabel();
         jTextField_club_id = new javax.swing.JTextField();
-        jLabel_age = new javax.swing.JLabel();
         jTextField_age = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         addlabel1 = new javax.swing.JLabel();
         update = new javax.swing.JLabel();
         Delete = new javax.swing.JLabel();
+        Coach_name_label = new javax.swing.JLabel();
+        club_id_label = new javax.swing.JLabel();
+        Coach_id_label = new javax.swing.JLabel();
+        Coach_age_label = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
 
@@ -83,41 +83,17 @@ public class Coach extends javax.swing.JPanel {
 
         gradientPanel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
-        jLabel_coach_id.setBackground(new java.awt.Color(5, 117, 230));
-        jLabel_coach_id.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel_coach_id.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel_coach_id.setText("Coach ID");
-        jLabel_coach_id.setOpaque(true);
-
-        jLabel_coach_name.setBackground(new java.awt.Color(5, 117, 230));
-        jLabel_coach_name.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel_coach_name.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel_coach_name.setText("Coach Name");
-        jLabel_coach_name.setOpaque(true);
-
         jTextField_coach_name.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField_coach_nameActionPerformed(evt);
             }
         });
 
-        jLabel_club_id.setBackground(new java.awt.Color(5, 117, 230));
-        jLabel_club_id.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel_club_id.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel_club_id.setText("Club ID");
-        jLabel_club_id.setOpaque(true);
-
         jTextField_club_id.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField_club_idActionPerformed(evt);
             }
         });
-
-        jLabel_age.setBackground(new java.awt.Color(5, 117, 230));
-        jLabel_age.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel_age.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel_age.setText("Age");
-        jLabel_age.setOpaque(true);
 
         jTextField_age.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -152,6 +128,22 @@ public class Coach extends javax.swing.JPanel {
             }
         });
 
+        Coach_name_label.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Coach_name_label.setForeground(new java.awt.Color(255, 255, 255));
+        Coach_name_label.setText("Coach Name");
+
+        club_id_label.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        club_id_label.setForeground(new java.awt.Color(255, 255, 255));
+        club_id_label.setText("Club ID");
+
+        Coach_id_label.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Coach_id_label.setForeground(new java.awt.Color(255, 255, 255));
+        Coach_id_label.setText("Coach ID");
+
+        Coach_age_label.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Coach_age_label.setForeground(new java.awt.Color(255, 255, 255));
+        Coach_age_label.setText("Age");
+
         javax.swing.GroupLayout gradientPanel1Layout = new javax.swing.GroupLayout(gradientPanel1);
         gradientPanel1.setLayout(gradientPanel1Layout);
         gradientPanel1Layout.setHorizontalGroup(
@@ -163,22 +155,22 @@ public class Coach extends javax.swing.JPanel {
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(gradientPanel1Layout.createSequentialGroup()
-                        .addGroup(gradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel_coach_name)
-                            .addComponent(jLabel_coach_id))
+                        .addGroup(gradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(Coach_name_label)
+                            .addComponent(Coach_id_label, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(gradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jTextField_coach_id, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTextField_coach_name, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(gradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(gradientPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel_age)
-                                .addGap(39, 39, 39)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, gradientPanel1Layout.createSequentialGroup()
+                                .addComponent(Coach_age_label, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jTextField_age, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(gradientPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel_club_id)
-                                .addGap(18, 18, 18)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, gradientPanel1Layout.createSequentialGroup()
+                                .addComponent(club_id_label, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jTextField_club_id, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(82, 82, 82)))
                 .addGroup(gradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -201,28 +193,27 @@ public class Coach extends javax.swing.JPanel {
                     .addGroup(gradientPanel1Layout.createSequentialGroup()
                         .addGroup(gradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(gradientPanel1Layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
+                                .addGap(16, 16, 16)
                                 .addGroup(gradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel_coach_id)
-                                    .addComponent(jTextField_coach_id, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(jTextField_coach_id, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Coach_id_label, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, gradientPanel1Layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(gradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jTextField_club_id, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel_club_id))))
+                                    .addComponent(club_id_label, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(gradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel_coach_name)
-                            .addGroup(gradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jTextField_coach_name, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jTextField_age, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel_age))))
+                        .addGroup(gradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField_coach_name, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField_age, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Coach_name_label, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Coach_age_label, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(gradientPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(update)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(Delete)))
-                .addContainerGap(58, Short.MAX_VALUE))
+                .addContainerGap(62, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -237,7 +228,7 @@ public class Coach extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(gradientPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(20, 20, 20)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 101, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 97, Short.MAX_VALUE)
                 .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -366,14 +357,14 @@ public class Coach extends javax.swing.JPanel {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Coach_age_label;
+    private javax.swing.JLabel Coach_id_label;
+    private javax.swing.JLabel Coach_name_label;
     private javax.swing.JLabel Delete;
     private javax.swing.JLabel addlabel1;
+    private javax.swing.JLabel club_id_label;
     private componant.GradientPanel gradientPanel1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel_age;
-    private javax.swing.JLabel jLabel_club_id;
-    private javax.swing.JLabel jLabel_coach_id;
-    private javax.swing.JLabel jLabel_coach_name;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField_age;
